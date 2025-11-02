@@ -1,304 +1,145 @@
-
-
 <!doctype html>
-
 <html lang="de">
-
 <head>
-
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <title>Martin Bauschke — Bildbearbeitung & Retusche</title>
-
   <meta name="description" content="High‑End Bildbearbeitung, Freisteller, Produktretusche und Compositing für Fotografen & Shops.">
-
   <meta name="author" content="Martin Bauschke">
-
   <style>
-
-    /* Simple, modern responsive CSS - easy to edit */
-
+    /* Simple, modern responsive CSS */
     :root{--accent:#0066cc;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2}
-
     *{box-sizing:border-box}
-
     body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071019 0%, #071728 100%); color:#e8eef6}
-
     .container{max-width:1100px;margin:0 auto;padding:28px}
-
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-
     .brand{display:flex;align-items:center;gap:12px}
-
     .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2ea6ff);display:flex;align-items:center;justify-content:center;font-weight:700}
-
     nav a{color:var(--muted);text-decoration:none;margin-left:18px}
-
     .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
-
     .hero h1{font-size:34px;margin:0 0 12px}
-
     .hero p{margin:0 0 18px;color:var(--muted)}
-
     .cta{display:inline-block;padding:12px 18px;background:var(--accent);color:white;border-radius:10px;text-decoration:none}
-
     .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px}
-
     .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}
-
     .thumb{height:120px;border-radius:8px;overflow:hidden;display:block}
-
     .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-
     section{margin-top:28px}
-
     .services{display:flex;flex-wrap:wrap;gap:12px}
-
     .service{flex:1 1 220px;padding:14px;border-radius:10px;background:rgba(255,255,255,0.02)}
-
     footer{margin-top:36px;color:var(--muted);font-size:14px;text-align:center}
-
     form input,form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
-
     form button{margin-top:10px;padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white}
-
     @media (max-width:880px){.hero{grid-template-columns:1fr;}.brand .hide-sm{display:none}}
-
   </style>
-
 </head>
-
 <body>
-
   <div class="container">
-
     <header>
-
       <div class="brand">
-
-        <div class="logo">DB</div>
-
+        <div class="logo">MB</div>
         <div>
-
           <div style="font-weight:700">Martin Bauschke</div>
-
           <div style="font-size:13px;color:var(--muted)">Freier Bildbearbeiter & Retoucher</div>
-
         </div>
-
       </div>
-
       <nav>
-
         <a href="#services">Leistungen</a>
-
         <a href="#portfolio">Portfolio</a>
-
         <a href="#preise">Preise</a>
-
         <a href="#kontakt" class="cta">Kontakt</a>
-
       </nav>
-
     </header>
 
-
     <main>
-
       <section class="hero">
-
         <div>
-
           <h1>High‑End Bildbearbeitung für Produkt‑ & People‑Fotografie</h1>
-
           <p>Ich retuschiere Fotos, erstelle Freisteller, Composings und bereite Bildmaterial für Onlineshops, Werbung und Social Media auf.</p>
-
           <a href="#kontakt" class="cta">Anfrage senden</a>
 
-
           <div class="card" style="margin-top:18px">
-
             <strong>Kurz & prägnant</strong>
-
             <div style="color:var(--muted);margin-top:8px">Schnelle Turnaround‑Zeiten, revisionsfähig, Photoshop & Affinity-Workflows.</div>
-
-            <div style="margin-top:12px;font-size:13px;color:var(--muted)">Referenzen: Produktfotografie, Automotive Retusche, Videoschnitt, 3d, AI- Creator</div>
-
+            <div style="margin-top:12px;font-size:13px;color:var(--muted)">Referenzen: Produktfotografie, Automotive Retusche, Videoschnitt, 3D, AI-Creator</div>
           </div>
-
         </div>
-
 
         <aside class="card">
-
           <h3 style="margin:0 0 8px">Beispiel‑Arbeiten</h3>
-
           <div class="gallery" id="portfolio">
-
-            <a class="thumb" href="#">   <img src="images/test.jpg" alt="Beispiel 1"> </a>
-
-
-
-           <a class="thumb" href="#"><img src="https://picsum.photos/seed/2/800/600" alt="Beispiel 2"></a>
-
-            <a class="thumb" href="#"><img src="https://picsum.photos/seed/3/800/600" alt="Beispiel 3"></a>
-
-            <a class="thumb" href="#"><img src="https://picsum.photos/seed/4/800/600" alt="Beispiel 4"></a>
-
+            <!-- Lokale Bilder aus images/ -->
+            <a class="thumb" href="#"><img src="images/test1.jpg" alt="Beispiel 1"></a>
+            <a class="thumb" href="#"><img src="images/test2.jpg" alt="Beispiel 2"></a>
+            <a class="thumb" href="#"><img src="images/test3.jpg" alt="Beispiel 3"></a>
+            <a class="thumb" href="#"><img src="images/test4.jpg" alt="Beispiel 4"></a>
           </div>
-
         </aside>
-
       </section>
-
 
       <section id="services">
-
         <h2>Leistungen</h2>
-
         <div class="services">
-
           <div class="service">
-
             <strong>Freisteller & Masking</strong>
-
             <div style="color:var(--muted);margin-top:6px">Freistellen für Produktbilder (PNG / Schatten) – ideal für Shops.</div>
-
           </div>
-
           <div class="service">
-
             <strong>High‑End Retusche</strong>
-
             <div style="color:var(--muted);margin-top:6px">Beauty‑Retusche, Hautkorrektur, Body‑Retouching, Dodge & Burn.</div>
-
           </div>
-
           <div class="service">
-
             <strong>Compositing & Montagen</strong>
-
             <div style="color:var(--muted);margin-top:6px">Hintergründe ersetzen, Bildwelten bauen, Produkt in Szene setzen.</div>
-
           </div>
-
           <div class="service">
-
             <strong>Colorgrading & Farbkorrektur</strong>
-
             <div style="color:var(--muted);margin-top:6px">Einheitlicher Look für Kataloge & Social Media.</div>
-
           </div>
-
         </div>
-
       </section>
-
 
       <section id="preise">
-
         <h2>Preise (Beispiele)</h2>
-
         <div class="card">
-
           <ul style="margin:0;padding-left:18px;color:var(--muted)">
-
             <li>Einfacher Freisteller: ab 0,70 € / Bild</li>
-
             <li>High‑End Retusche (Portrait): ab 15 € / Bild</li>
-
             <li>Produkt‑Batchverarbeitung: auf Anfrage</li>
-
           </ul>
-
           <div style="font-size:13px;color:var(--muted);margin-top:8px">Individuelle Angebote nach Aufwand & Volumen. Mengenrabatte möglich.</div>
-
         </div>
-
       </section>
-
 
       <section id="kontakt">
-
         <h2>Kontakt</h2>
-
         <div class="card">
-
           <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-
             <label for="name">Name</label>
-
             <input id="name" name="name" required>
-
             <label for="email">E‑Mail</label>
-
             <input id="email" name="email" type="email" required>
-
             <label for="project">Kurzbeschreibung / Link zu Bildern</label>
-
             <textarea id="project" name="project" rows="4"></textarea>
-
             <label for="budget">Budget (optional)</label>
-
             <input id="budget" name="budget">
-
             <button type="submit">Anfrage senden</button>
-
-            <div style="font-size:13px;color:var(--muted);margin-top:8px">Hinweis: Für echte Formulare Formular‑Endpoint (z. B. Formspree, Netlify Forms) eintragen.</div>
-
+            <div style="font-size:13px;color:var(--muted);margin-top:8px">Hinweis: Für echte Formulare Formular‑Endpoint eintragen.</div>
           </form>
-
         </div>
-
       </section>
-
-
     </main>
 
-
     <footer>
-
       © <span id="year"></span> Martin Bauschke — <a href="#" style="color:var(--muted);text-decoration:underline">Impressum & Datenschutz</a>
-
     </footer>
-
   </div>
 
-
   <script>
-
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Beispiel: lightbox: klick auf Vorschaubild öffnet größeres Bild
-
+    // Lightbox für lokale Bilder
     document.querySelectorAll('.thumb').forEach(a => {
-
       a.addEventListener('click', e => {
-
         e.preventDefault();
-
-        const src = a.querySelector('img').src.replace('/seed/','/seed/');
-
-        const overlay = document.createElement('div');
-
-        overlay.style.position='fixed';overlay.style.left=0;overlay.style.top=0;overlay.style.right=0;overlay.style.bottom=0;overlay.style.background='rgba(0,0,0,0.8)';overlay.style.display='flex';overlay.style.alignItems='center';overlay.style.justifyContent='center';overlay.style.zIndex=9999;
-
-        const img = document.createElement('img');img.src=src;img.style.maxWidth='90%';img.style.maxHeight='90%';img.style.borderRadius='8px';
-
-        overlay.appendChild(img);
-
-        overlay.addEventListener('click',()=>overlay.remove());
-
-        document.body.appendChild(overlay);
-
-      })
-
-    })
-
-  </script>
-
-</body>
-
-</html>
+        const src = a

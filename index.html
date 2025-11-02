@@ -31,7 +31,39 @@
     form input,form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
     form button{margin-top:10px;padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white}
     @media (max-width:880px){.hero{grid-template-columns:1fr;}.brand .hide-sm{display:none}}
-  </style>
+    /* === NEU: Logo + Header === */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), #2ea6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .name {
+    font-weight: 750;
+    margin-bottom: 2px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
 </head>
 <body>
   <div class="container">
@@ -41,9 +73,10 @@
     <img src="images/logo.png" alt="Logo">
   </div>
   <div>
-    <div style="font-weight: 750; margin-right:4px;">Martin Bauschke</div>
-    <div style="font-size:13px;color:var(--muted)">Freier Bildbearbeiter & Retoucher</div>
+    <div class="name">Martin Bauschke</div>
+    <div class="subtitle">Freier Bildbearbeiter & Retoucher</div>
   </div>
+</div>
       <nav>
         <a href="#services">Leistungen</a>
         <a href="#portfolio">Portfolio</a>
